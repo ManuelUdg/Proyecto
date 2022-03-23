@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ejemplo básico de ReactJS desde cero</title>
+</head>
+<body>
+<div id="elementoparareact"></div>
+<script src="https://unpkg.com/react@15.4.2/dist/react.js"></script>
+<script src="https://unpkg.com/react-dom@15.4.2/dist/react-dom.js"></script>
+<script src="https://unpkg.com/babel-core@5.8.38/browser.min.js"></script>
+<script type="text/babel">
+var vista =
+<div>
+<h1>React Rules</h1>
+<p>Esto es un código de una vista</p>
+<p>Puede parecer HTML, dentro de Javascript, pero es JSX</p>
+</div>;
+var elemento = document.getElementById('elementoparareact');
+ReactDOM.render(vista, elemento);
+</script>
+</body>
+</html>
